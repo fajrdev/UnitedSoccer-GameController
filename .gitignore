@@ -4,6 +4,14 @@ frontend/node_modules/
 .pnp
 .pnp.js
 
+# Compiled application binaries (distributed via Releases)
+/GameController
+/UnitedSoccerGameController
+/bin/
+
+# Design reference notes
+DESIGN-*.md
+
 # Rust build artifacts
 target/
 **/target/
@@ -28,3 +36,4 @@ GameController-robocup/
 # Temporary files
 *.tmp
 *.bak
+
