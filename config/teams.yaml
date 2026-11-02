@@ -1,0 +1,152 @@
+# ============================================================================
+# FIRA HuroCup United Soccer GameController — Permanent Teams & Rosters YAML
+# ============================================================================
+# Edit this file to permanently customize default Team Names, Robot Names,
+# University/Club origins, and initial roles (goalkeeper, fieldPlayer, substitute, inactive).
+#
+# Wire IDs [US-21.7]:
+#   - Left Defending Team  : Wire ID = slotIndex (IDs 0..10)
+#   - Right Defending Team : Wire ID = 16 + slotIndex (IDs 16..26)
+# ============================================================================
+
+leftTeam:
+  name: United Cyan (Left)
+  color: cyan
+  slots:
+    - slotIndex: 0
+      originClub: NTNU ERC (Taiwan)
+      robotName: HuroBot-Alpha
+      role: goalkeeper
+    - slotIndex: 1
+      originClub: TKU Robotics (Taiwan)
+      robotName: TKU-Striker
+      role: fieldPlayer
+    - slotIndex: 2
+      originClub: ITS Surabaya (Indonesia)
+      robotName: Ichiro-Wing
+      role: fieldPlayer
+    - slotIndex: 3
+      originClub: KAIST Humanoid (Korea)
+      robotName: Hubo-Mid
+      role: fieldPlayer
+    - slotIndex: 4
+      originClub: Univ. Manitoba (Canada)
+      robotName: Autonomous-5
+      role: fieldPlayer
+    - slotIndex: 5
+      originClub: NCKU Lab (Taiwan)
+      robotName: ChengKung-Sub1
+      role: substitute
+    - slotIndex: 6
+      originClub: Unicamp (Brazil)
+      robotName: BrasilBot-Sub2
+      role: substitute
+    - slotIndex: 7
+      originClub: Reserve Club
+      robotName: Unit-7
+      role: inactive
+    - slotIndex: 8
+      originClub: Reserve Club
+      robotName: Unit-8
+      role: inactive
+    - slotIndex: 9
+      originClub: Reserve Club
+      robotName: Unit-9
+      role: inactive
+    - slotIndex: 10
+      originClub: Reserve Club
+      robotName: Unit-10
+      role: inactive
+
+rightTeam:
+  name: United Rose (Right)
+  color: rose
+  slots:
+    - slotIndex: 0
+      originClub: TU Dortmund (Germany)
+      robotName: WalkMan-GK
+      role: goalkeeper
+    - slotIndex: 1
+      originClub: POSTECH (Korea)
+      robotName: Pohang-Forward
+      role: fieldPlayer
+    - slotIndex: 2
+      originClub: NTU Singapore
+      robotName: Merlion-Bot
+      role: fieldPlayer
+    - slotIndex: 3
+      originClub: Kyutech (Japan)
+      robotName: Hibikino-4
+      role: fieldPlayer
+    - slotIndex: 4
+      originClub: UI Indonesia
+      robotName: Garuda-5
+      role: fieldPlayer
+    - slotIndex: 5
+      originClub: UTM Malaysia
+      robotName: Harimau-Sub1
+      role: substitute
+    - slotIndex: 6
+      originClub: SNU Korea
+      robotName: Seoul-Sub2
+      role: substitute
+    - slotIndex: 7
+      originClub: Reserve Club
+      robotName: Unit-7
+      role: inactive
+    - slotIndex: 8
+      originClub: Reserve Club
+      robotName: Unit-8
+      role: inactive
+    - slotIndex: 9
+      originClub: Reserve Club
+      robotName: Unit-9
+      role: inactive
+    - slotIndex: 10
+      originClub: Reserve Club
+      robotName: Unit-10
+      role: inactive
+
+clubPool:
+  - originClub: NTNU ERC (Taiwan)
+    robotName: HuroBot-Alpha
+    prefersGoalkeeper: true
+  - originClub: TKU Robotics (Taiwan)
+    robotName: TKU-Striker
+    prefersGoalkeeper: false
+  - originClub: ITS Surabaya (Indonesia)
+    robotName: Ichiro-Wing
+    prefersGoalkeeper: false
+  - originClub: KAIST Humanoid (Korea)
+    robotName: Hubo-Mid
+    prefersGoalkeeper: false
+  - originClub: Univ. Manitoba (Canada)
+    robotName: Autonomous-5
+    prefersGoalkeeper: false
+  - originClub: TU Dortmund (Germany)
+    robotName: WalkMan-GK
+    prefersGoalkeeper: true
+  - originClub: POSTECH (Korea)
+    robotName: Pohang-Forward
+    prefersGoalkeeper: false
+  - originClub: NTU Singapore
+    robotName: Merlion-Bot
+    prefersGoalkeeper: false
+  - originClub: Kyutech (Japan)
+    robotName: Hibikino-4
+    prefersGoalkeeper: false
+  - originClub: UI Indonesia
+    robotName: Garuda-5
+    prefersGoalkeeper: false
+  - originClub: NCKU Lab (Taiwan)
+    robotName: ChengKung-Sub1
+    prefersGoalkeeper: false
+  - originClub: Unicamp (Brazil)
+    robotName: BrasilBot-Sub2
+    prefersGoalkeeper: false
+  - originClub: UTM Malaysia
+    robotName: Harimau-Sub1
+    prefersGoalkeeper: false
+  - originClub: SNU Korea
+    robotName: Seoul-Sub2
+    prefersGoalkeeper: false

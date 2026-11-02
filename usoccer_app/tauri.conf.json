@@ -1,0 +1,46 @@
+{
+  "app": {
+    "windows": [
+      {
+        "title": "FIRA HuroCup United Soccer — GameController [US-21]",
+        "width": 1440,
+        "height": 900,
+        "minWidth": 1100,
+        "minHeight": 720,
+        "resizable": true
+      }
+    ],
+    "security": {
+      "capabilities": [
+        {
+          "identifier": "default",
+          "windows": ["main"],
+          "permissions": ["core:default", "core:event:allow-listen", "core:event:allow-unlisten"]
+        }
+      ],
+      "csp": "default-src 'self'; style-src 'self' 'unsafe-inline'"
+    }
+  },
+  "build": {
+    "beforeBuildCommand": "npm run build",
+    "beforeDevCommand": "cd ../frontend && npm run dev",
+    "devUrl": "http://127.0.0.1:3000",
+    "frontendDist": "../frontend/build"
+  },
+  "bundle": {
+    "active": true,
+    "category": "Utility",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ],
+    "shortDescription": "FIRA HuroCup United Soccer GameController (US-21 Protocol)",
+    "targets": "all"
+  },
+  "identifier": "org.fira.hurocup.unitedsoccer.gamecontroller",
+  "mainBinaryName": "UnitedSoccerGameController",
+  "productName": "FIRA United Soccer GameController"
+}

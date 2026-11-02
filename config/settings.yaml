@@ -1,0 +1,24 @@
+# ============================================================================
+# FIRA HuroCup United Soccer GameController — Permanent Match & UDP Settings
+# ============================================================================
+# Edit this file directly or click 'Save as Permanent Default (YAML)' in the UI.
+#
+# Categories:
+#   - kidSize     : Official Kid-Sized (Max 5v5 + 2 Substitutes)
+#   - adultSize   : Official Adult-Sized (Max 3v3 + 2 Substitutes)
+#   - training    : Freeform Training / Lab Mode (1v1, 2v2, or any custom slot mix)
+# ============================================================================
+
+match:
+  category: kidSize
+  trainingPlayersPerTeam: 1
+  firstHalfKickoffSide: left
+  halfDurationSeconds: 600
+
+network:
+  interfaceName: all
+  interfaceAddress: 0.0.0.0
+  broadcastIp: 255.255.255.255
+  port: 3838
+  broadcastHz: 2
+  simulatorEnabled: true

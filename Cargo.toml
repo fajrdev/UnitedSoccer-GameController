@@ -1,0 +1,35 @@
+[workspace]
+default-members = ["usoccer_app"]
+members = [
+  "usoccer_msgs",
+  "usoccer_core",
+  "usoccer_net",
+  "usoccer_app",
+]
+resolver = "2"
+
+[workspace.dependencies]
+anyhow = { version = "1.0" }
+bytes = { version = "1.0" }
+clap = { version = "4.2", features = ["derive"] }
+network-interface = { version = "1" }
+rand = { version = "0.8" }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = { version = "1.0" }
+serde_repr = { version = "0.1" }
+serde_yaml = { version = "0.9" }
+socket2 = { version = "0.5", features = ["all"] }
+tauri = { version = "2.1", features = [] }
+tauri-build = { version = "2.0", features = [] }
+thiserror = { version = "1.0" }
+time = { version = "0.3", features = ["formatting", "local-offset", "macros", "serde"] }
+tokio = { version = "1.0", features = ["fs", "io-util", "macros", "net", "rt", "rt-multi-thread", "sync", "time"] }
+usoccer_core = { path = "usoccer_core" }
+usoccer_msgs = { path = "usoccer_msgs" }
+usoccer_net = { path = "usoccer_net" }
+
+[workspace.package]
+authors = ["FIRA HuroCup United Soccer Contributors"]
+edition = "2021"
+license = "MIT"
+version = "1.0.0"

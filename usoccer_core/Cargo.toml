@@ -1,0 +1,11 @@
+[package]
+name = "usoccer_core"
+version = { workspace = true }
+edition = { workspace = true }
+license = { workspace = true }
+description = "Core game logic, state machine, bitmask generator, and US-19/US-20 individual scoring engine for FIRA HuroCup United Soccer"
+
+[dependencies]
+rand = { workspace = true }
+serde = { workspace = true }
+usoccer_msgs = { workspace = true }

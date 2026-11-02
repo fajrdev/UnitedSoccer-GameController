@@ -1,0 +1,16 @@
+[package]
+name = "usoccer_net"
+version = { workspace = true }
+edition = { workspace = true }
+license = { workspace = true }
+description = "UDP broadcast sender, robot telemetry receiver, US-3.6 rate/bandwidth monitor, and built-in robot packet simulator for FIRA HuroCup United Soccer"
+
+[dependencies]
+anyhow = { workspace = true }
+network-interface = { workspace = true }
+rand = { workspace = true }
+serde = { workspace = true }
+socket2 = { workspace = true }
+tokio = { workspace = true }
+usoccer_core = { workspace = true }
+usoccer_msgs = { workspace = true }

@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+:root {
+  /* Ollama + MiniMax Synthesized Token Palette */
+  --canvas: #ffffff;
+  --surface: #f7f8fa;
+  --surface-soft: #fafafa;
+  --surface-muted: #f2f3f5;
+  --surface-dark: #171717;
+  --primary: #0a0a0a;
+  --ink: #000000;
+  --ink-deep: #090909;
+  --charcoal: #222222;
+  --charcoal-soft: #525252;
+  --slate: #45515e;
+  --steel: #5f5f5f;
+  --body: #737373;
+  --stone: #8e8e93;
+  --mute: #a3a3a3;
+  --hairline: #e5e5e5;
+  --hairline-soft: #eaecf0;
+  --hairline-strong: #d4d4d4;
+
+  /* MiniMax Product Identity Accents (reserved for identity cards & badges) */
+  --brand-coral: #ff5530;
+  --brand-magenta: #ea5ec1;
+  --brand-blue: #1456f0;
+  --brand-blue-deep: #1d4ed8;
+  --brand-blue-200: #bfdbfe;
+  --brand-cyan: #3daeff;
+  --brand-purple: #a855f7;
+  --success-bg: #e8ffea;
+  --success-text: #1ba673;
+
+  /* Ollama Terminal Traffic Lights */
+  --terminal-red: #ff5f56;
+  --terminal-yellow: #ffbd2e;
+  --terminal-green: #27c93f;
+}
+
+@layer base {
+  body {
+    font-family: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: var(--canvas);
+    color: var(--primary);
+  }
+
+  code,
+  pre,
+  .font-mono {
+    font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  }
+
+  .font-display-rounded {
+    font-family: "SF Pro Rounded", "Nunito", "DM Sans", system-ui, sans-serif;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+}
+
+@keyframes pulse-coral {
+  0%,
+  100% {
+    border-color: #ff5530;
+    background-color: #fff5f2;
+  }
+  50% {
+    border-color: #ffa089;
+    background-color: #ffffff;
+  }
+}
+
+.animate-pulse-urgent {
+  animation: pulse-coral 1s ease-in-out infinite;
+}
+
+/* Minimalist Hairline Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fafafa;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d4d4d4;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a3a3a3;
+}

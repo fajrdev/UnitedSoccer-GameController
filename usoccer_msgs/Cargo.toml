@@ -1,0 +1,11 @@
+[package]
+name = "usoccer_msgs"
+version = { workspace = true }
+edition = { workspace = true }
+license = { workspace = true }
+description = "FIRA HuroCup United Soccer [US-21] binary UDP protocol encoder and decoder"
+
+[dependencies]
+serde = { workspace = true }
+serde_repr = { workspace = true }
+thiserror = { workspace = true }

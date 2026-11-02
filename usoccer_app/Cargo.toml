@@ -1,0 +1,23 @@
+[package]
+name = "usoccer_app"
+version = { workspace = true }
+edition = { workspace = true }
+license = { workspace = true }
+description = "FIRA HuroCup United Soccer GameController Tauri 2 Application"
+
+[build-dependencies]
+tauri-build = { workspace = true }
+
+[dependencies]
+anyhow = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+tauri = { workspace = true }
+tokio = { workspace = true }
+usoccer_core = { workspace = true }
+usoccer_msgs = { workspace = true }
+usoccer_net = { workspace = true }
+
+[features]
+default = ["custom-protocol"]
+custom-protocol = ["tauri/custom-protocol"]
